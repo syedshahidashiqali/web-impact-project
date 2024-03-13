@@ -53,7 +53,7 @@ export const Header = () => {
               }
               className="w-full"
               href="#"
-              size="lg"
+              // size="lg"
             >
               {item}
             </Link>
