@@ -11,7 +11,7 @@ export default function useLoader<DataT>(
   initialData: any = null,
   deps: any[] = []
 ) {
-  const [error, setError] = useState<Error>(null);
+  const [error, setError] = useState<Error>();
   const [data, setData] = useState<DataT>(initialData);
   const [status, setStatus] = useState<
     "idle" | "fetching" | "success" | "error"
