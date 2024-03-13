@@ -24,7 +24,7 @@ export default function useLoader<DataT>(
         setData(result);
         setStatus("success");
       })();
-    } catch (e) {
+    } catch (e:any) {
       setError(e);
       setStatus("success");
     }
